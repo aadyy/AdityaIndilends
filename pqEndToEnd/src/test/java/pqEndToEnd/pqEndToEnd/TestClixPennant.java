@@ -18,7 +18,7 @@ public class TestClixPennant extends Base {
 	crPQuserObj=new CreatePquser();
 	crPQuserObj.createPQuserFun();
 	Thread.sleep(5000);
-	loadBrowser("https://uatweb.indialends.com");
+	loadBrowser("https://uatweb.indialends.com"); 
 	} catch (IOException e) {
 		e.printStackTrace();
 	} catch (InterruptedException e) {
@@ -43,5 +43,10 @@ public class TestClixPennant extends Base {
 	Thread.sleep(4000);
 	driver.findElement(By.xpath("//input[@id=\"li_display_name\"]")).sendKeys(uname);
 	driver.findElement(By.id("email")).sendKeys(uemail);
+	}
+	
+	@Test
+	public void shortForm() {
+	System.out.println("sort form definition");	
 	}
 }
