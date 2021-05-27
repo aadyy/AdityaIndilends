@@ -14,6 +14,7 @@ public ClixPennant(WebDriver idriver) {
 		Base.driver=idriver;
 		PageFactory.initElements(driver, this);
 	}
+	// LOGIN BUTTON ELEMENTS
 	@FindBy(xpath = "//a[@class=\"btn btn-outline-primary ml-4 mt-lg-0 mt-5 d-lg-block d-none\"]")
 	WebElement loginButton;
 	@FindBy(id = "txt_mobile_number")
@@ -26,6 +27,7 @@ public ClixPennant(WebDriver idriver) {
 	WebElement tandc;
 	@FindBy(id = "btnVerifyOtp")
 	WebElement verifyandClick;
+	//PERSONAL LOAN
 	
 	public void ClixPennanatJavaFun() throws InterruptedException {
 	String str=UpdatePQDBvalues.recivedPquser;
