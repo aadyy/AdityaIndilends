@@ -1,8 +1,5 @@
 package pqUserCreation;
 
-import java.util.Iterator;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,10 +28,12 @@ public class Pqsheetupload {
 //			 nbfcs=listofnbfc.get(i).getAttribute("value");
 //			System.out.println("Nbfcs are :"+nbfcs);
 //		}
-		driver.findElement(By.id("li_nbfc")).click();
-		Select sel=new Select(driver.findElement(By.id("li_nbfc")));
-		sel.selectByVisibleText(Base.getPropertyFile("mylinksdata.properties", "nbfcidname"));
+		 driver.findElement(By.id("li_nbfc")).click();
+		 Select sel=new Select(driver.findElement(By.id("li_nbfc")));
+		 sel.selectByVisibleText("NBFC value as selected is: "+System.getProperty("sel"));
+		 // sel.selectByVisibleText(Base.getPropertyFile("mylinksdata.properties", "nbfcidname"));
 		 WebElement uploadElement = driver.findElement(By.cssSelector("#fileSelect"));
+	
 		 uploadElement.sendKeys("C:\\Users\\Adityayadav\\eclipse-workspace\\pqEndToEnd\\src\\main\\java\\myproperty\\PQ_lead.xlsx");
 		 Thread.sleep(3000);
 		 driver.findElement(By.cssSelector("#btn_insert")).click();
@@ -43,6 +42,5 @@ public class Pqsheetupload {
 		 driver.close();
 		 driver.quit();
 		UpdatePQDBvalues.CheckPqleadDetailsTableFun(UserId,Mobileno);
-		}
-	
+		}	
 }

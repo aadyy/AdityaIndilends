@@ -88,7 +88,7 @@ public static void insertIntoACMCfun(String insMobileNumber,String insUserID,Str
 			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 			LocalDateTime now = LocalDateTime.now(); 
 			PreparedStatement prepStmt=connection.prepareStatement(inserQuery);
-			System.out.println("insert query is :"+ inserQuery);
+			//System.out.println("insert query is :"+ inserQuery);
 			
 			prepStmt.setObject(1,insMobileNumber );
 			prepStmt.setObject(2,800);

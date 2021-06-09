@@ -6,8 +6,8 @@
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
         <methods>
           <include name="openUrl"/>
-          <include name="ApplyPreQualifiedLoan"/>
           <include name="tearDown"/>
+          <include name="offileDetails"/>
         </methods>
       </class> <!-- pqEndToEnd.pqEndToEnd.TestClixPennant -->
     </classes>

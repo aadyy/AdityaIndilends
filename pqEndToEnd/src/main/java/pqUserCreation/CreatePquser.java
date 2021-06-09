@@ -5,7 +5,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import org.testng.annotations.Test;
 import pqEndToEnd.pqEndToEnd.Base;
 import utilities.MypqSheetWrite;
 
@@ -26,11 +25,13 @@ public class CreatePquser extends Base{
 			if (connection != null) {
 				System.out.println("Connected to the database");
 				try {
-					CallableStatement callstmt = connection.prepareCall("{call prcCRMUserCreation(?,?,?,?)}");
+					CallableStatement callstmt = connection.prepareCall("{call prcCRMUserCreation(?,?,?,?,?)}");
 					callstmt.setObject("mobilenumber", mobile); 
 					callstmt.setObject("p_monthly_income", "50000"); 
 					callstmt.setObject("u_emp_tpe", "1"); 
-					callstmt.setObject("p_pincode", "110012"); 
+					callstmt.setObject("p_pincode", "110012");
+					callstmt.setObject("Dob", "1990-10-10"); 
+
 					System.out.println("Mobile no is: "+mobile);
 					ResultSet result = callstmt.executeQuery();
 					
