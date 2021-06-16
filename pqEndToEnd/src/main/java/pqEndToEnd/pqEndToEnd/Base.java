@@ -3,15 +3,9 @@ package pqEndToEnd.pqEndToEnd;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -94,32 +88,14 @@ public class Base {
 	 public static String randomACMCid(){
 	    	  Random random = new Random();
 			  int index = random.nextInt(20);
-
 			  String [] id = {"24975", "24974","24973","24972","24971","24970","24969","24968", "24967","24966",
 					  		  "24965", "24964","24963","24962","24961","24960","24959","24958","24957","24956"};
 		      String txt= id[index];
 		      return txt;
-		 }
+		      
+		 }	 
 	 
-	 public static String CaptureScreen(WebDriver driver, String ImagesPath) {
-		    TakesScreenshot oScn = (TakesScreenshot) driver;
-		    File oScnShot = oScn.getScreenshotAs(OutputType.FILE);
-		    Date date = new Date();
-			SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyyhhmm");
-			String strDate = formatter.format(date);
-		    File oDest = new File(System.getProperty("user.dir") + "//screenshot//Live//"+ strDate +ImagesPath + ".png");
-		    try {
-		        FileUtils.copyFile(oScnShot, oDest);
-		    } catch (IOException e) {
-		        System.out.println(e.getMessage());
-		    }
-		    return ImagesPath + ".png";
-		}
-	 
-	 
-	 
-	 
-	 @AfterMethod(enabled = false)
+	@AfterMethod(enabled = false)
 	public void tearDown() throws InterruptedException {
 	Thread.sleep(7000);
 	driver.close();

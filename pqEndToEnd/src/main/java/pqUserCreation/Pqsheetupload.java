@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
 import pqEndToEnd.pqEndToEnd.Base;
 
 public class Pqsheetupload {
@@ -30,8 +29,8 @@ public class Pqsheetupload {
 //		}
 		 driver.findElement(By.id("li_nbfc")).click();
 		 Select sel=new Select(driver.findElement(By.id("li_nbfc")));
-		 sel.selectByVisibleText("NBFC value as selected is: "+System.getProperty("sel"));
-		 // sel.selectByVisibleText(Base.getPropertyFile("mylinksdata.properties", "nbfcidname"));
+		// sel.selectByVisibleText("NBFC value as selected is: "+System.getProperty("sel"));
+		 sel.selectByVisibleText(Base.getPropertyFile("mylinksdata.properties", "nbfcidname"));
 		 WebElement uploadElement = driver.findElement(By.cssSelector("#fileSelect"));
 	
 		 uploadElement.sendKeys("C:\\Users\\Adityayadav\\eclipse-workspace\\pqEndToEnd\\src\\main\\java\\myproperty\\PQ_lead.xlsx");

@@ -4,24 +4,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.model.Log;
-
 import pqUserCreation.CreatePquser;
 import pqUserCreation.UpdatePQDBvalues;
 import utilities.GetOtp;
 import utilities.GetdataForPL;
+import utilities.WebActions;
 
 public class TestClixPennant extends Base {
 	CreatePquser crPQuserObj;
@@ -37,7 +29,7 @@ public class TestClixPennant extends Base {
 		e.printStackTrace();
 	} catch (InterruptedException e) {
 		e.printStackTrace();
-	}	
+	}		
 	}
 	
 	ClixPennant obj;
@@ -88,7 +80,7 @@ public class TestClixPennant extends Base {
 	Thread.sleep(4000);
 	driver.navigate().refresh();
 	
-	CaptureScreen(driver, "C:\\Users\\Adityayadav\\git\\AdityaIndilends\\pqEndToEnd\\screenshot");
+	WebActions.CaptureScreen(driver, "C:\\Users\\Adityayadav\\git\\AdityaIndilends\\pqEndToEnd\\screenshot");
 	
     driver.findElement(By.xpath("//*[@class=\"wrapping text-l-sm sm-marg10l border-right-none-sm\"]")).click();
     driver.findElement(By.xpath("//*[@class=\"display-block font15\"]")).click();
