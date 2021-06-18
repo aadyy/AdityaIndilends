@@ -19,7 +19,7 @@ public class TestClixPennant extends Base {
 	CreatePquser crPQuserObj;
 	UpdatePQDBvalues updatepqobj;
 	@BeforeTest
-	private void openUrl() {
+	private void createPQuserAndopenUrl() {
 	try {
 	crPQuserObj=new CreatePquser();
 	crPQuserObj.createPQuserFun();

@@ -5,9 +5,9 @@
     <classes>
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
         <methods>
-          <include name="openUrl"/>
           <include name="ApplyPreQualifiedLoan"/>
           <include name="Panform"/>
+          <include name="createPQuserAndopenUrl"/>
           <include name="personalDetails"/>
           <include name="tearDown"/>
           <include name="offileDetails"/>

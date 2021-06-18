@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class javacodtoGETOTP {
 	
-	static String dbURL = Base.getPropertyFile("databasedata.properties","url");
-	static String dbuser = Base.getPropertyFile("databasedata.properties","user");
-	static String dbpassword = Base.getPropertyFile("databasedata.properties","password");
+	static String dbURL = Base.getPropertyFile("data.properties","url");
+	static String dbuser = Base.getPropertyFile("data.properties","user");
+	static String dbpassword = Base.getPropertyFile("data.properties","password");
 	static String otprecived="";
 	
 	public static void main(String[] args) {

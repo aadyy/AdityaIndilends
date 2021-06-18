@@ -2,31 +2,31 @@
 <testng-results skipped="4" failed="0" ignored="1" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18756" started-at="2021-06-16T12:53:36 IST" finished-at="2021-06-16T12:53:54 IST">
+  <suite name="Default suite" duration-ms="22613" started-at="2021-06-18T15:37:07 IST" finished-at="2021-06-18T15:37:29 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18756" started-at="2021-06-16T12:53:36 IST" finished-at="2021-06-16T12:53:54 IST">
+    <test name="Default test" duration-ms="22613" started-at="2021-06-18T15:37:07 IST" finished-at="2021-06-18T15:37:29 IST">
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
-        <test-method status="FAIL" signature="openUrl()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="openUrl" is-config="true" duration-ms="18550" started-at="2021-06-16T12:53:36 IST" finished-at="2021-06-16T12:53:54 IST">
+        <test-method status="FAIL" signature="createPQuserAndopenUrl()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="createPQuserAndopenUrl" is-config="true" duration-ms="22437" started-at="2021-06-18T15:37:07 IST" finished-at="2021-06-18T15:37:29 IST">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -59,7 +59,7 @@ at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 at pqUserCreation.Pqsheetupload.pqsheetuploadFun(Pqsheetupload.java:15)
 at utilities.MypqSheetWrite.MypqSheetWritefun(MypqSheetWrite.java:22)
 at pqUserCreation.CreatePquser.createPQuserFun(CreatePquser.java:57)
-at pqEndToEnd.pqEndToEnd.TestClixPennant.openUrl(TestClixPennant.java:25)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.createPQuserAndopenUrl(TestClixPennant.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -89,27 +89,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method status="SKIP" signature="ApplyPreQualifiedLoan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="ApplyPreQualifiedLoan" duration-ms="0" started-at="2021-06-16T12:53:54 IST" data-provider="getTestDataUtilsFu" finished-at="2021-06-16T12:53:54 IST">
+        </test-method> <!-- createPQuserAndopenUrl -->
+        <test-method status="SKIP" signature="ApplyPreQualifiedLoan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="ApplyPreQualifiedLoan" duration-ms="0" started-at="2021-06-18T15:37:29 IST" data-provider="getTestDataUtilsFu" finished-at="2021-06-18T15:37:29 IST">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -142,7 +142,7 @@ at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 at pqUserCreation.Pqsheetupload.pqsheetuploadFun(Pqsheetupload.java:15)
 at utilities.MypqSheetWrite.MypqSheetWritefun(MypqSheetWrite.java:22)
 at pqUserCreation.CreatePquser.createPQuserFun(CreatePquser.java:57)
-at pqEndToEnd.pqEndToEnd.TestClixPennant.openUrl(TestClixPennant.java:25)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.createPQuserAndopenUrl(TestClixPennant.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -173,26 +173,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApplyPreQualifiedLoan -->
-        <test-method status="SKIP" signature="Panform()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="Panform" duration-ms="0" started-at="2021-06-16T12:53:54 IST" finished-at="2021-06-16T12:53:54 IST">
+        <test-method status="SKIP" signature="Panform()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="Panform" duration-ms="0" started-at="2021-06-18T15:37:29 IST" finished-at="2021-06-18T15:37:29 IST">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -225,7 +225,7 @@ at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 at pqUserCreation.Pqsheetupload.pqsheetuploadFun(Pqsheetupload.java:15)
 at utilities.MypqSheetWrite.MypqSheetWritefun(MypqSheetWrite.java:22)
 at pqUserCreation.CreatePquser.createPQuserFun(CreatePquser.java:57)
-at pqEndToEnd.pqEndToEnd.TestClixPennant.openUrl(TestClixPennant.java:25)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.createPQuserAndopenUrl(TestClixPennant.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -256,26 +256,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Panform -->
-        <test-method status="SKIP" signature="offileDetails()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="offileDetails" duration-ms="0" started-at="2021-06-16T12:53:54 IST" finished-at="2021-06-16T12:53:54 IST">
+        <test-method status="SKIP" signature="offileDetails()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="offileDetails" duration-ms="0" started-at="2021-06-18T15:37:29 IST" finished-at="2021-06-18T15:37:29 IST">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -308,7 +308,7 @@ at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 at pqUserCreation.Pqsheetupload.pqsheetuploadFun(Pqsheetupload.java:15)
 at utilities.MypqSheetWrite.MypqSheetWritefun(MypqSheetWrite.java:22)
 at pqUserCreation.CreatePquser.createPQuserFun(CreatePquser.java:57)
-at pqEndToEnd.pqEndToEnd.TestClixPennant.openUrl(TestClixPennant.java:25)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.createPQuserAndopenUrl(TestClixPennant.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -339,26 +339,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- offileDetails -->
-        <test-method status="SKIP" signature="personalDetails()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="personalDetails" duration-ms="0" started-at="2021-06-16T12:53:54 IST" finished-at="2021-06-16T12:53:54 IST">
+        <test-method status="SKIP" signature="personalDetails()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="personalDetails" duration-ms="0" started-at="2021-06-18T15:37:29 IST" finished-at="2021-06-18T15:37:29 IST">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created exception
 from chrome not reachable
-  (Session info: chrome=91.0.4472.101)
+  (Session info: chrome=91.0.4472.106)
   (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15.01 seconds
+Command duration or timeout: 15.22 seconds
 Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+System info: host: 'ADITYAYADAV-PC', ip: '172.20.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: driver.version: ChromeDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -391,7 +391,7 @@ at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
 at pqUserCreation.Pqsheetupload.pqsheetuploadFun(Pqsheetupload.java:15)
 at utilities.MypqSheetWrite.MypqSheetWritefun(MypqSheetWrite.java:22)
 at pqUserCreation.CreatePquser.createPQuserFun(CreatePquser.java:57)
-at pqEndToEnd.pqEndToEnd.TestClixPennant.openUrl(TestClixPennant.java:25)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.createPQuserAndopenUrl(TestClixPennant.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
