@@ -22,6 +22,7 @@ public class GetdataForPL {
 		
 		String salary=ex.getCellData("pl", "salary", i);
 		System.out.println("user salary from sheet: "+salary);
+		
 		Object[] ob= {name,email,pincode,company,salary};
 		mydata.add(ob);
 		}

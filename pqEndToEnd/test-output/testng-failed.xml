@@ -5,12 +5,10 @@
     <classes>
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
         <methods>
-          <include name="ApplyPreQualifiedLoan"/>
-          <include name="Panform"/>
+          <include name="personalandOfficeDetailsDetails"/>
           <include name="createPQuserAndopenUrl"/>
-          <include name="personalDetails"/>
+          <include name="additionalDetails"/>
           <include name="tearDown"/>
-          <include name="offileDetails"/>
         </methods>
       </class> <!-- pqEndToEnd.pqEndToEnd.TestClixPennant -->
     </classes>

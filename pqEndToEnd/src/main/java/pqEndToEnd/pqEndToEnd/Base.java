@@ -19,7 +19,7 @@ public class Base {
 	
 	//#1. property reading
 	public static String getPropertyFile(String filename,String key)  {
-		File file=new File("C:\\Users\\Adityayadav\\eclipse-workspace\\pqEndToEnd\\src\\main\\java\\myproperty\\"+filename);
+		File file=new File("C:\\Users\\Adityayadav\\git\\AdityaIndilends\\pqEndToEnd\\src\\main\\java\\myproperty\\"+filename);
 	try {
 			FileInputStream fis = new FileInputStream(file);
 			property=new Properties();
