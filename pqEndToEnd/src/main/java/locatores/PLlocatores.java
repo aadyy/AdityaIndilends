@@ -39,7 +39,7 @@ public class PLlocatores extends Base{
 		@FindBy(id = "employment")
 		public WebElement employment;
 		@FindBy(id = "div_employment_type")
-		public WebElement salaried;
+		public WebElement salariedEmp;
 		@FindBy(id = "companyName")
 		public WebElement companyName;
 		@FindBy(id = "a_loc1")
@@ -71,11 +71,13 @@ public class PLlocatores extends Base{
 		@FindBy()
 		WebElement pancard;
 		
+		@FindBy(xpath = "//span[@class=\"custom-select-trigger\" and contains(text(),\"Mode of Salary\")]")
+		public WebElement modeofSal;
 		@FindBy(id= "salary-account-bank")
-		public WebElement bank;
+		public WebElement Modeisbank;
 		@FindBy(id = "bankname")
 		public WebElement bankName;
-		@FindBy(xpath = "//ul[@id=\"companynamedata\"]//li[contains(text(),\"ICICI BANK LTD\")]")
+		@FindBy(xpath = "//ul[@id=\"companynamedata\"]//li")
 		public WebElement selctBankName;
 		@FindBy(id = "address1")
 		public WebElement address1;
@@ -125,6 +127,10 @@ public class PLlocatores extends Base{
 		public WebElement LoanPurpose;
 		@FindBy(xpath = "//div[@class=\"custom-select-menu\"]//following::span[contains(text(),\"Marriage\")]")
 		public WebElement marriage;
+		@FindBy(xpath = "//label[@for=\"mobileLinkedtoAadhar\"]")
+		public WebElement mobileLinkedYES;
+		@FindBy(xpath = "//label[@for=\"mobileLinkedtoAadhar2\"]")
+		public WebElement mobileLinkedNO;
 		@FindBy(xpath = "//label[@for=\"isPerAddSame\" and contains(text(),\"Yes\")]")
 		public WebElement IsPermaYES;
 		@FindBy(id="Landmark")

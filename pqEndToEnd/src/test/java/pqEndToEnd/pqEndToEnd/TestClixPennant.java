@@ -15,18 +15,22 @@ public class TestClixPennant extends Base {
 	CreatePquser crPQuserObj;
 	UpdatePQDBvalues updatepqobj; 
 	PLlocatores plloc;
+	
 	@BeforeTest
 	private void createPQuserAndopenUrl() {
 	try {
 	crPQuserObj=new CreatePquser();
 	crPQuserObj.createPQuserFun();
 	Thread.sleep(5000);
-	loadBrowser("https://uatweb.indialends.com"); 
-	} catch (IOException e) {
-		e.printStackTrace();
-	} catch (InterruptedException e) {
-		e.printStackTrace();
-	}		
+	 }  catch (InterruptedException e) {e.printStackTrace();}		
+	}
+	
+	
+	@Test(priority = 0, groups = {"LaunchBrowser"})
+	private void launchBrowser() {
+	try {
+		loadBrowser("https://uatweb.indialends.com");
+	} catch (IOException e) {e.printStackTrace();}
 	}
 	
 	@DataProvider(name = "getTestDataUtilsFu")
@@ -36,29 +40,37 @@ public class TestClixPennant extends Base {
 	}
 
 	LoginPage obj;
-	@Test(priority = 0,enabled = false)
-	public void testLoginAndOffer() throws InterruptedException {
+	@Test(priority = 1,enabled = false)
+	public void testLoginAndOffer() {
 	obj=new LoginPage();
 	obj.ClixPennanatLoginJavaFun();
 	}
 	
-	@Test(priority = 1,enabled = true,dataProvider = "getTestDataUtilsFu")
+	@Test(priority = 2,enabled = true,dataProvider = "getTestDataUtilsFu",groups = {"shortpan"},dependsOnGroups = {"LaunchBrowser"})
 	public void shortFormPanFormDetails(String name,String email,String pincode,String company,String salary) throws InterruptedException{
 	PLshortForm obj=new PLshortForm();
 	PLpanForm pan=obj.PlshortFormFun(name, email, pincode, company, salary);
 	pan.PLpanformFun();
 	}
 
-	@Test(priority = 2)
-    public void personalandOfficeDetailsDetails() throws InterruptedException {
+	@Test(priority = 3,enabled = true,groups = {"personalofcdetails"},dependsOnGroups = {"shortpan"})
+    public void personalandOfficeDetailsDetails()  {
 	PLpersonalDetails pp=new PLpersonalDetails();
 	PLofficeDetails ofc=pp.PLpersonalDetailsFun();
 	ofc.PlofficeDetailsFun();
 	}
    
-	@Test(priority = 3)
-	private void additionalDetails() throws InterruptedException {
+	@Test(priority = 4,  enabled = true,groups = {"additional"},dependsOnGroups = {"personalofcdetails"})
+	private void additionalDetails() throws InterruptedException{
 	PLadditionalDetails ad=new PLadditionalDetails();
 	ad.PLadditionalDetailsFun();
 	}
+	
+	@Test(priority = 5, enabled = true,groups = {"clixstepper"},dependsOnGroups = {"additional"})
+	private void TestClixStepper() throws InterruptedException {
+	CLixStepperPage clix=new CLixStepperPage();
+	clix.CLixStepperPageFun();
+	}
+	
+
 }

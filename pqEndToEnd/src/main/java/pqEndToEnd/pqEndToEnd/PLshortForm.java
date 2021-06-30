@@ -2,8 +2,10 @@ package pqEndToEnd.pqEndToEnd;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import locatores.PLlocatores;
 import pqUserCreation.UpdatePQDBvalues;
@@ -15,51 +17,45 @@ public class PLshortForm extends Base{
 	
 	PLlocatores plloc;
 	UpdatePQDBvalues updatepqobj; 
+	WebDriverWait wait;
 	@DataProvider(name = "getTestDataUtilsFu")
 	public Iterator<Object[]> getDataFromExcel() {
 	ArrayList<Object[]> iterate=GetdataForPL.getTestDataUtilsFun();
 	return iterate.iterator();
 	}
-	
+
 	public PLpanForm PlshortFormFun(String name,String email,String pincode,String company,String salary) throws InterruptedException {
 	plloc=new PLlocatores(driver);
-	Thread.sleep(4000);
+	wait=new WebDriverWait(driver, 20);
 	plloc.personalLoan.click();
 	plloc.username.sendKeys(name);
 	plloc.emailid.sendKeys(email);
 	plloc.pincode.sendKeys(pincode);
 	plloc.employment.click();
-	Thread.sleep(4000);
-	plloc.salaried.click();
+	wait.until(ExpectedConditions.elementToBeClickable(plloc.salariedEmp));
+	plloc.salariedEmp.click();
 	plloc.companyName.sendKeys(company);
-	Thread.sleep(5000);
-	java.util.List<WebElement> list= driver.findElements(By.xpath("//ul[@class=\"dropdown-menu display-block\"]//li"));
-		for (int i = 0; i < list.size(); i++) {
-			String str=list.get(i).getText();
-			System.out.println("List of companies :"+str);
-		}
-	plloc.companyslect.click();
+	Thread.sleep(2000);
 	plloc.monthlyIncome.sendKeys(salary);
-	
 	//pquser received
 	String str=updatepqobj.recivedPquser;
 	plloc.mobile.sendKeys(str);
+	wait.until(ExpectedConditions.elementToBeClickable(plloc.ButtonPLsubmit));
 	plloc.ButtonPLsubmit.click();
-	Thread.sleep(4000);
+	wait.until(ExpectedConditions.elementToBeClickable(plloc.otp));
 	String useridforotp=UpdatePQDBvalues.userId;
 	String otp=GetOtp.getOtpViaUseridFun(useridforotp);
-	System.out.println("user id is: "+useridforotp);
 	System.out.println("The otp we received is :"+otp);
 	plloc.otp.sendKeys(otp);
-	Thread.sleep(4000);
 	plloc.ihearby.click();
 	plloc.otpverify.click();
-	Thread.sleep(4000);
+	Thread.sleep(2000);
 	driver.navigate().refresh();
-	WebActions.CaptureScreen(driver, "C:\\Users\\Adityayadav\\git\\AdityaIndilends\\pqEndToEnd\\screenshot");
+	WebActions.CaptureScreen(driver);
+	wait.until(ExpectedConditions.elementToBeClickable(plloc.widgit));
 	plloc.widgit.click();
 	plloc.ButtonOTPnextClick.click();
-    Thread.sleep(4000);
+    
 	return new PLpanForm();
 	}
 	

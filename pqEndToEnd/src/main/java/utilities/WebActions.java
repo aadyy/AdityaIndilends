@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,19 +18,22 @@ import pqEndToEnd.pqEndToEnd.Base;
 
 public class WebActions extends Base {
 
-	 public static String CaptureScreen(WebDriver driver, String ImagesPath) {
+	 public static void CaptureScreen(WebDriver driver) {
+		 Date currentdate=new Date();
+		 String screenshotdate=currentdate.toString().replace(" ", "-").replace(":", "-");
+		 System.out.println("Current date is: "+screenshotdate);
+		 
 		    TakesScreenshot oScn = (TakesScreenshot) driver;
 		    File oScnShot = oScn.getScreenshotAs(OutputType.FILE);
-		    Date date = new Date();
-			SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyyhhmm");
-			String strDate = formatter.format(date);
-		    File oDest = new File(System.getProperty("user.dir") + "//screenshot//Live//"+ strDate +ImagesPath + ".png");
+//		    Date date = new Date();
+//			SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyyhhmm");
+//			String strDate = formatter.format(date);
+		    File oDest = new File(System.getProperty("user.dir") + "//screenshot//Live//"+screenshotdate+".png");
 		    try {
 		        FileUtils.copyFile(oScnShot, oDest);
 		    } catch (IOException e) {
 		        System.out.println(e.getMessage());
 		    }
-		    return ImagesPath + ".png";
 		}
 	 
 	 public static void ExplicitWait(WebElement ele) {
@@ -45,6 +49,12 @@ public class WebActions extends Base {
 		 Actions ac=new Actions(driver);
 		 ac.dragAndDrop(source, target);
 	 }
+	 
+	 public static void scroll(WebElement element) {
+     JavascriptExecutor js=(JavascriptExecutor) driver;
+     js.executeAsyncScript("arguments[0].scrollIntoView();", element );
+
+	}
 	 
 	 
 	 

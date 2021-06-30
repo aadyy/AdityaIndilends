@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="1" failed="1" ignored="1" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="178400" started-at="2021-06-23T18:26:42 IST" finished-at="2021-06-23T18:29:40 IST">
+  <suite name="Default suite" duration-ms="107800" started-at="2021-06-28T18:03:08 IST" finished-at="2021-06-28T18:04:56 IST">
     <groups>
+      <group name="clixstepper">
+        <method signature="TestClixPennant.TestClixStepper()[pri:5, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="TestClixStepper" class="pqEndToEnd.pqEndToEnd.TestClixPennant"/>
+      </group> <!-- clixstepper -->
+      <group name="additional">
+        <method signature="TestClixPennant.additionalDetails()[pri:4, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="additionalDetails" class="pqEndToEnd.pqEndToEnd.TestClixPennant"/>
+      </group> <!-- additional -->
+      <group name="shortpan">
+        <method signature="TestClixPennant.shortFormPanFormDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="shortFormPanFormDetails" class="pqEndToEnd.pqEndToEnd.TestClixPennant"/>
+      </group> <!-- shortpan -->
+      <group name="LaunchBrowser">
+        <method signature="TestClixPennant.launchBrowser()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="launchBrowser" class="pqEndToEnd.pqEndToEnd.TestClixPennant"/>
+      </group> <!-- LaunchBrowser -->
+      <group name="personalofcdetails">
+        <method signature="TestClixPennant.personalandOfficeDetailsDetails()[pri:3, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="personalandOfficeDetailsDetails" class="pqEndToEnd.pqEndToEnd.TestClixPennant"/>
+      </group> <!-- personalofcdetails -->
     </groups>
-    <test name="Default test" duration-ms="178400" started-at="2021-06-23T18:26:42 IST" finished-at="2021-06-23T18:29:40 IST">
+    <test name="Default test" duration-ms="107800" started-at="2021-06-28T18:03:08 IST" finished-at="2021-06-28T18:04:56 IST">
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
-        <test-method status="PASS" signature="createPQuserAndopenUrl()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="createPQuserAndopenUrl" is-config="true" duration-ms="53094" started-at="2021-06-23T18:26:42 IST" finished-at="2021-06-23T18:27:35 IST">
+        <test-method status="PASS" signature="createPQuserAndopenUrl()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="createPQuserAndopenUrl" is-config="true" duration-ms="35922" started-at="2021-06-28T18:03:08 IST" finished-at="2021-06-28T18:03:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPQuserAndopenUrl -->
-        <test-method status="PASS" signature="shortFormPanFormDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="shortFormPanFormDetails" duration-ms="54277" started-at="2021-06-23T18:27:35 IST" data-provider="getTestDataUtilsFu" finished-at="2021-06-23T18:28:29 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="launchBrowser" duration-ms="16940" started-at="2021-06-28T18:03:44 IST" finished-at="2021-06-28T18:04:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="shortFormPanFormDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="shortFormPanFormDetails" duration-ms="22453" depends-on-groups="LaunchBrowser" started-at="2021-06-28T18:04:01 IST" data-provider="getTestDataUtilsFu" finished-at="2021-06-28T18:04:24 IST">
           <params>
             <param index="0">
               <value>
@@ -30,26 +49,102 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Clix capital service]]>
+                <![CDATA[CLIX CAPITAL SERVICES]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[50000.0]]>
+                <![CDATA[5000.0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shortFormPanFormDetails -->
-        <test-method status="PASS" signature="personalandOfficeDetailsDetails()[pri:2, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="personalandOfficeDetailsDetails" duration-ms="25767" started-at="2021-06-23T18:28:29 IST" finished-at="2021-06-23T18:28:55 IST">
+        <test-method status="PASS" signature="personalandOfficeDetailsDetails()[pri:3, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="personalandOfficeDetailsDetails" duration-ms="4191" depends-on-groups="shortpan" started-at="2021-06-28T18:04:24 IST" finished-at="2021-06-28T18:04:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- personalandOfficeDetailsDetails -->
-        <test-method status="PASS" signature="additionalDetails()[pri:3, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@76b0bfab]" name="additionalDetails" duration-ms="45136" started-at="2021-06-23T18:28:55 IST" finished-at="2021-06-23T18:29:40 IST">
+        <test-method status="FAIL" signature="additionalDetails()[pri:4, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="additionalDetails" duration-ms="28185" depends-on-groups="personalofcdetails" started-at="2021-06-28T18:04:28 IST" finished-at="2021-06-28T18:04:56 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://uatweb.indialends.com/dashboard/Emicalculation/PQStepper] but found [https://uatweb.indialends.com/dashboard/EmiCalculation/DocInProcess]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://uatweb.indialends.com/dashboard/Emicalculation/PQStepper] but found [https://uatweb.indialends.com/dashboard/EmiCalculation/DocInProcess]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at pqEndToEnd.pqEndToEnd.PLadditionalDetails.PLadditionalDetailsFun(PLadditionalDetails.java:64)
+at pqEndToEnd.pqEndToEnd.TestClixPennant.additionalDetails(TestClixPennant.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- additionalDetails -->
+        <test-method status="SKIP" signature="TestClixStepper()[pri:5, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d]" name="TestClixStepper" duration-ms="0" depends-on-groups="additional" started-at="2021-06-28T18:04:56 IST" finished-at="2021-06-28T18:04:56 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestClixPennant.TestClixStepper()[pri:5, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d] depends on not successfully finished methods in group "additional"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestClixPennant.TestClixStepper()[pri:5, instance:pqEndToEnd.pqEndToEnd.TestClixPennant@69a3d1d] depends on not successfully finished methods in group "additional"
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestClixStepper -->
       </class> <!-- pqEndToEnd.pqEndToEnd.TestClixPennant -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

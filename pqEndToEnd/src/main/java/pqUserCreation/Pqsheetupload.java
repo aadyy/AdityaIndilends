@@ -18,7 +18,7 @@ public class Pqsheetupload {
 		driver.findElement(By.cssSelector("#txt_emailid")).sendKeys("ayesha@indialends.com");
 		driver.findElement(By.cssSelector("#txt_password")).sendKeys("test");
 		driver.findElement(By.cssSelector("#btn_login")).click();
-		Thread.sleep(7000);
+		Thread.sleep(2000);
 		driver.get("https://crmuat.indialends.com/admin/pq_docupload_customer_contact.aspx");
 		
 //		List<WebElement> listofnbfc= driver.findElements(By.xpath("//select[@id=\"li_nbfc\"]//option"));
@@ -34,12 +34,11 @@ public class Pqsheetupload {
 		 WebElement uploadElement = driver.findElement(By.cssSelector("#fileSelect"));
 	
 		 uploadElement.sendKeys("C:\\Users\\Adityayadav\\eclipse-workspace\\pqEndToEnd\\src\\main\\java\\myproperty\\PQ_lead.xlsx");
-		 Thread.sleep(3000);
+		 Thread.sleep(2000);
 		 driver.findElement(By.cssSelector("#btn_insert")).click();
 		 Thread.sleep(2000);
 		 driver.switchTo().alert().dismiss();
 		 driver.close();
-		 driver.quit();
 		UpdatePQDBvalues.CheckPqleadDetailsTableFun(UserId,Mobileno);
 		}	
 }

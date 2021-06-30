@@ -5,7 +5,10 @@
     <classes>
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
         <methods>
+          <include name="TestClixStepper"/>
           <include name="personalandOfficeDetailsDetails"/>
+          <include name="shortFormPanFormDetails"/>
+          <include name="launchBrowser"/>
           <include name="createPQuserAndopenUrl"/>
           <include name="additionalDetails"/>
           <include name="tearDown"/>

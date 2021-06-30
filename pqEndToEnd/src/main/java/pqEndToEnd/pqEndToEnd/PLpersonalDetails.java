@@ -1,27 +1,31 @@
 package pqEndToEnd.pqEndToEnd;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import locatores.PLlocatores;
 
 public class PLpersonalDetails extends Base {
 	
 	PLlocatores plloc;
-	public PLofficeDetails PLpersonalDetailsFun() throws InterruptedException {
+	WebDriverWait wait=new WebDriverWait(driver, 10);
+	public PLofficeDetails PLpersonalDetailsFun()  {
 	plloc=new PLlocatores(driver);
 	//Personal Details
-			plloc.HighEducation.click();	
-			Thread.sleep(3000);
+			plloc.HighEducation.click();
+			wait.until(ExpectedConditions.elementToBeClickable(plloc.PostGraducation));
 			plloc.PostGraducation.click();
 			plloc.Single.click();
 		    plloc.currentResidence.click();
-		    Thread.sleep(3000);
+			wait.until(ExpectedConditions.elementToBeClickable(plloc.rentedWithFamily));
 		    plloc.rentedWithFamily.click();
 		    plloc.HowLongUhaveBeenStaying.click();
-		    Thread.sleep(3000);
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"custom-options\"]//span[contains(text(),\"More than 24 months\")]")));
 		    List<WebElement> howLongList= driver.findElements(By.xpath("//div[@class=\"custom-options\"]//span[contains(text(),\"More than 24 months\")]"));  
 		    int size=howLongList.size();
 		    System.out.println("number of how long have u been stay element present : "+size);
@@ -35,8 +39,8 @@ public class PLpersonalDetails extends Base {
 //			howLongList.get(i).click();
 //			}
 			}
-		    Thread.sleep(3000);
-		    plloc.ButtonPersonalDetails.click();
+			wait.until(ExpectedConditions.elementToBeClickable(plloc.ButtonPersonalDetails));
+			plloc.ButtonPersonalDetails.click();
 			return new PLofficeDetails();
 	
 	}

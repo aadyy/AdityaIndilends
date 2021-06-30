@@ -8,7 +8,7 @@ import utilities.GetOtp;
 public class LoginPage extends Base {
 	
 	PLlocatores plloc;
-	public void ClixPennanatLoginJavaFun() throws InterruptedException {
+	public void ClixPennanatLoginJavaFun()  {
 	plloc=new PLlocatores(driver);
 	String str=UpdatePQDBvalues.recivedPquser;
 	System.out.println("PQuser we received is:"+str);
@@ -25,8 +25,4 @@ public class LoginPage extends Base {
 	driver.findElement(By.xpath("//a[@class=\"btn btn-blue secondary\"]")).click();
 	driver.findElement(By.id("prefil_no")).click();
 	}
-	
-	
-	
-
 }

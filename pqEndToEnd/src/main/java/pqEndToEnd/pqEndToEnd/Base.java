@@ -10,12 +10,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
+
+import com.beust.jcommander.Parameter;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	
 	static public WebDriver driver;
-	static public Properties property;
+	public static Properties property;
 	
 	//#1. property reading
 	public static String getPropertyFile(String filename,String key)  {
@@ -36,7 +42,9 @@ public class Base {
 	public static void loadBrowser(String url) throws IOException {
 		String Browser=getPropertyFile("mylinksdata.properties", "Browser");
 		if (Browser.equalsIgnoreCase("chrome")) {
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+//		WebDriverManager.chromedriver().setup();
+//		ChromeDriver ch=new ChromeDriver();
 		driver=new ChromeDriver();
 		}
 		else if (Browser.equalsIgnoreCase("firefox")){
@@ -50,6 +58,7 @@ public class Base {
 	driver.manage().deleteAllCookies();
 	driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	
 	}
 	
 	//#3 Randowm MobileNumber creation

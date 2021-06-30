@@ -132,6 +132,14 @@
     <version>5.5.3</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.simplejavamail/outlook-message-parser -->
+<dependency>
+    <groupId>org.simplejavamail</groupId>
+    <artifactId>outlook-message-parser</artifactId>
+    <version>1.7.9</version>
+</dependency>
+
+
  
 	
     
