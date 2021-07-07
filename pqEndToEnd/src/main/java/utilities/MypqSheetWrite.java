@@ -1,6 +1,6 @@
 package utilities;
 
-import pqEndToEnd.pqEndToEnd.Base;
+import pageclass.Base;
 import pqUserCreation.Pqsheetupload;
 
 public class MypqSheetWrite extends Base {
@@ -11,7 +11,7 @@ public class MypqSheetWrite extends Base {
 	try {
 			excel.writeDataExcelFun("sheet1", "u_user_id", 2, userid);
 			boolean bolleanmobilenumber= excel.writeDataExcelFun("sheet1", "Mobile_number", 2, mobilenumber);
-			System.out.println("data inserted to PQuserSheet? :"+ bolleanmobilenumber);
+			System.out.println("Data inserted to PQuserSheet? :"+ bolleanmobilenumber);
 			
 			
 		} catch (Exception e) {

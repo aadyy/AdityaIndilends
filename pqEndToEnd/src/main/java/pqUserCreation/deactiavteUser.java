@@ -4,7 +4,8 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 import utilities.ExcelReader;
 import utilities.GetOtp;
 

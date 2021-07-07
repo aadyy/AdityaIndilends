@@ -7,7 +7,7 @@
         <methods>
           <include name="TestClixStepper"/>
           <include name="personalandOfficeDetailsDetails"/>
-          <include name="shortFormPanFormDetails"/>
+          <include name="shortFormPanFormDetails" invocation-numbers="0"/>
           <include name="launchBrowser"/>
           <include name="createPQuserAndopenUrl"/>
           <include name="additionalDetails"/>

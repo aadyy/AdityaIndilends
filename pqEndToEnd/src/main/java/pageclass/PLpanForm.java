@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -22,6 +22,8 @@ public class PLpanForm extends Base{
 		 plloc.loanAmt.sendKeys("300000");
 		 plloc.male.click();
 		 plloc.dob.sendKeys("10/10/1990");
+		 plloc.pancard.clear();
+		 plloc.pancard.sendKeys("AKOPY4346H");
 		 plloc.modeofSal.click();
 		 wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Mode of Salary')]//following::span[contains(text(),\"Bank\")]")));
 		 List<WebElement> modeofsalselect=driver.findElements(By.xpath("//span[contains(text(),'Mode of Salary')]//following::span[contains(text(),\"Bank\")]"));

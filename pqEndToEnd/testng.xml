@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+    	<class name="pqEndToEnd.pqEndToEnd.TestClixPennant"/>  	
       <class name="pqEndToEnd.pqEndToEnd.TestClixPennant"/>  
     </classes>
   </test> <!-- Test -->

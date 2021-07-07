@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import locatores.ClixStepperLocator;

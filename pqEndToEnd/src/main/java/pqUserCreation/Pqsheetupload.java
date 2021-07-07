@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 
 public class Pqsheetupload {
 	

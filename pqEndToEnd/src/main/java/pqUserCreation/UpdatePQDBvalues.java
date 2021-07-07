@@ -8,7 +8,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 
 public class UpdatePQDBvalues extends Base{
 	

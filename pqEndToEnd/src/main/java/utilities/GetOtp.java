@@ -6,7 +6,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 
 public class GetOtp {
 	static String dbURL = Base.getPropertyFile("databasedata.properties","url");

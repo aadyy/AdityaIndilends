@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import java.util.ArrayList;
 import java.util.Iterator;

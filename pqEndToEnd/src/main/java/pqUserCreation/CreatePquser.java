@@ -5,7 +5,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 import utilities.MypqSheetWrite;
 
 public class CreatePquser extends Base{
@@ -32,13 +33,13 @@ public class CreatePquser extends Base{
 					callstmt.setObject("p_pincode", "110012");
 					callstmt.setObject("Dob", "1990-10-10"); 
 
-					System.out.println("Mobile no is: "+mobile);
+					System.out.println("---> User creation done <---");
 					ResultSet result = callstmt.executeQuery();
 					
 					while (result.next()) {
 			UserId=result.getObject("u_user_id").toString();
 			Mobileno=result.getString("mobilenumber");
-						System.out.println("User_Id "+UserId);
+						System.out.println("User_Id :"+UserId);
 						System.out.println("Mobile No: "+Mobileno);
 						}
 		

@@ -1,14 +1,12 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import static org.testng.Assert.assertEquals;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import locatores.PLlocatores;
 import utilities.WebActions;
 

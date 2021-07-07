@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import pqEndToEnd.pqEndToEnd.Base;
+
+import pageclass.Base;
 
 public class PLlocatores extends Base{
 	
@@ -68,8 +69,8 @@ public class PLlocatores extends Base{
 		public WebElement male;
 		@FindBy(id = "dob")
 		public WebElement dob;
-		@FindBy()
-		WebElement pancard;
+		@FindBy(id="panNo")
+		public WebElement pancard;
 		
 		@FindBy(xpath = "//span[@class=\"custom-select-trigger\" and contains(text(),\"Mode of Salary\")]")
 		public WebElement modeofSal;

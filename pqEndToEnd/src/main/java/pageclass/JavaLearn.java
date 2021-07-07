@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 public class JavaLearn {
 	
@@ -11,6 +11,11 @@ public class JavaLearn {
 		System.out.println(a2.age);
 		Aditya a3=new Aditya(30);
 		System.out.println(a3.age);
+		
+		int[] sam= {1,2,3};
+		System.out.println(sam[2]);
+		String str="strawberries";
+		System.out.println(str.toString());
 		}
 	
 }

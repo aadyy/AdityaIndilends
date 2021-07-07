@@ -14,7 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pqEndToEnd.pqEndToEnd.Base;
+import pageclass.Base;
 
 public class WebActions extends Base {
 

@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

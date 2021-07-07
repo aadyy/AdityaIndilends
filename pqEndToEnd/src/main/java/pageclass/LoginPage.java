@@ -1,4 +1,4 @@
-package pqEndToEnd.pqEndToEnd;
+package pageclass;
 
 import org.openqa.selenium.By;
 import locatores.PLlocatores;
