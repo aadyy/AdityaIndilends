@@ -90,9 +90,6 @@ public static void insertIntoACMCfun(String insMobileNumber,String insUserID,Str
 	   			prepStmt.close();
 			} 
 			catch (SQLException e) {e.printStackTrace();}	
-	
-		
-		 
 }
 
 	public static void isEligiblefun(String isEliGuserID) {

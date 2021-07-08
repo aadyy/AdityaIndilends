@@ -1,10 +1,11 @@
-package pqEndToEnd.pqEndToEnd;
+package Testclass;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import locatores.PLlocatores;
 import pageclass.Base;
@@ -19,6 +20,7 @@ import pqUserCreation.CreatePquser;
 import pqUserCreation.UpdatePQDBvalues;
 import utilities.GetdataForPL;
 
+@Listeners(pageclass.Listeneres.class)
 public class TestClixPennant extends Base {
 	CreatePquser crPQuserObj;
 	UpdatePQDBvalues updatepqobj; 

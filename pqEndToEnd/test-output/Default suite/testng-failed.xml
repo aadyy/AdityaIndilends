@@ -3,17 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pqEndToEnd.pqEndToEnd.TestClixPennant">
+      <class name="Testclass.TestpquserCreationOnly">
         <methods>
-          <include name="TestClixStepper"/>
-          <include name="personalandOfficeDetailsDetails"/>
-          <include name="shortFormPanFormDetails" invocation-numbers="0"/>
-          <include name="launchBrowser"/>
-          <include name="createPQuserAndopenUrl"/>
-          <include name="additionalDetails"/>
           <include name="tearDown"/>
+          <include name="title"/>
         </methods>
-      </class> <!-- pqEndToEnd.pqEndToEnd.TestClixPennant -->
+      </class> <!-- Testclass.TestpquserCreationOnly -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
