@@ -1,11 +1,9 @@
 package Testclass;
 
 import java.io.IOException;
-
 import org.testng.annotations.Test;
 import pageclass.Base;
 import pqUserCreation.CreatePquser;
-import utilities.WebActions;
 
 //@Listeners(pageclass.Listeneres.class)
 public class TestpquserCreationOnly extends Base {

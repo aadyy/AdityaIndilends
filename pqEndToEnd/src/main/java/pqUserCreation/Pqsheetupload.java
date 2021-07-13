@@ -30,7 +30,7 @@ public class Pqsheetupload {
 //		}
 		 driver.findElement(By.id("li_nbfc")).click();
 		 Select sel=new Select(driver.findElement(By.id("li_nbfc")));
-		// sel.selectByVisibleText("NBFC value as selected is: "+System.getProperty("sel"));
+		 //sel.selectByVisibleText("NBFC value as selected is: "+System.getProperty("nbfc"));
 		 sel.selectByVisibleText(Base.getPropertyFile("mylinksdata.properties", "nbfcidname"));
 		 WebElement uploadElement = driver.findElement(By.cssSelector("#fileSelect"));
 	
