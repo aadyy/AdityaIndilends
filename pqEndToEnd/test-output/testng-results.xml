@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23819" started-at="2021-07-08T15:14:05 IST" finished-at="2021-07-08T15:14:29 IST">
+  <suite name="Suite" duration-ms="34248" started-at="2021-07-13T11:51:32 IST" finished-at="2021-07-13T11:52:06 IST">
     <groups>
-      <group name="regression">
-        <method signature="TestpquserCreationOnly.openIndialends()[pri:3, instance:Testclass.TestpquserCreationOnly@69a3d1d]" name="openIndialends" class="Testclass.TestpquserCreationOnly"/>
-      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TestpquserCreationOnly.Testpquser()[pri:1, instance:Testclass.TestpquserCreationOnly@69a3d1d]" name="Testpquser" class="Testclass.TestpquserCreationOnly"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="23819" started-at="2021-07-08T15:14:05 IST" finished-at="2021-07-08T15:14:29 IST">
+    <test name="PquserCreationAndE2ETest" duration-ms="34248" started-at="2021-07-13T11:51:32 IST" finished-at="2021-07-13T11:52:06 IST">
       <class name="Testclass.TestpquserCreationOnly">
-        <test-method status="PASS" signature="openIndialends()[pri:3, instance:Testclass.TestpquserCreationOnly@69a3d1d]" name="openIndialends" duration-ms="23753" started-at="2021-07-08T15:14:05 IST" finished-at="2021-07-08T15:14:29 IST">
+        <test-method status="PASS" signature="Testpquser()[pri:1, instance:Testclass.TestpquserCreationOnly@69a3d1d]" name="Testpquser" duration-ms="34171" started-at="2021-07-13T11:51:32 IST" finished-at="2021-07-13T11:52:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openIndialends -->
+        </test-method> <!-- Testpquser -->
       </class> <!-- Testclass.TestpquserCreationOnly -->
-    </test> <!-- Test -->
+    </test> <!-- PquserCreationAndE2ETest -->
   </suite> <!-- Suite -->
 </testng-results>
