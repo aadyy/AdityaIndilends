@@ -18,11 +18,7 @@ public class PLshortForm extends Base{
 	PLlocatores plloc;
 	UpdatePQDBvalues updatepqobj; 
 	WebDriverWait wait;
-	@DataProvider(name = "getTestDataUtilsFu")
-	public Iterator<Object[]> getDataFromExcel() {
-	ArrayList<Object[]> iterate=GetdataForPL.getTestDataUtilsFun();
-	return iterate.iterator();
-	}
+
 
 	public PLpanForm PlshortFormFun(String name,String email,String pincode,String company,String salary) throws InterruptedException {
 	plloc=new PLlocatores(driver);

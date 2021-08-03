@@ -43,7 +43,7 @@ public class TestClixPennant extends Base {
 	} catch (IOException e) {e.printStackTrace();}
 	}
 	
-	@DataProvider(name = "getTestDataUtilsFu")
+	@DataProvider(name = "getTestDataUtilsFun")
 	public Iterator<Object[]> getDataFromExcel() {
 	ArrayList<Object[]> iterate=GetdataForPL.getTestDataUtilsFun();
 	return iterate.iterator();
@@ -56,7 +56,7 @@ public class TestClixPennant extends Base {
 	obj.ClixPennanatLoginJavaFun();
 	}
 	
-	@Test(priority = 2,enabled = true,dataProvider = "getTestDataUtilsFu",groups = {"shortpan"},dependsOnGroups = {"LaunchBrowser"})
+	@Test(priority = 2,enabled = true,dataProvider = "getTestDataUtilsFun",groups = {"shortpan"},dependsOnGroups = {"LaunchBrowser"})
 	public void shortFormPanFormDetails(String name,String email,String pincode,String company,String salary) throws InterruptedException{
 	PLshortForm obj=new PLshortForm();
 	PLpanForm pan=obj.PlshortFormFun(name, email, pincode, company, salary);

@@ -29,7 +29,7 @@ public class PLlocatores extends Base{
 		public WebElement verifyandClick;
 		
 		//PERSONAL LOAN Short Form Elements
-		@FindBy(xpath = "//li[@class=\"nav-item active\"]//a")
+		@FindBy(xpath = "//a[@class='nav-link'][normalize-space()='Personal Loan']")
 		public WebElement personalLoan;
 		@FindBy(xpath = "//input[@id=\"li_display_name\"]")
 		public WebElement username;

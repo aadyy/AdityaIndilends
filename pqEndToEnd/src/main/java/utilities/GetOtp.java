@@ -64,4 +64,8 @@ public class GetOtp {
 		return otprecivedviaMobilenumber;
 		}
 	
+	public static void main(String[] args) {
+		getOtpviaMobilenumberFun("5161366823");
+	}
+	
 }

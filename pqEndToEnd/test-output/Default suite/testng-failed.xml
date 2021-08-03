@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testclass.TestpquserCreationOnly">
+      <class name="Testclass.TestNewPL">
         <methods>
+          <include name="fun"/>
           <include name="tearDown"/>
-          <include name="title"/>
+          <include name="TestNewPLFUn" invocation-numbers="0 1 2 3 4 5 6"/>
         </methods>
-      </class> <!-- Testclass.TestpquserCreationOnly -->
+      </class> <!-- Testclass.TestNewPL -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

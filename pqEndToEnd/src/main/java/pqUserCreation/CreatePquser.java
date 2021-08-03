@@ -5,9 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import pageclass.Base;
-import utilities.MypqSheetWrite;
 
 public class CreatePquser extends Base{
 	

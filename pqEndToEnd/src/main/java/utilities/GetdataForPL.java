@@ -5,6 +5,7 @@ public class GetdataForPL {
 	
 	static ExcelReader ex;
 	public static ArrayList<Object[]> getTestDataUtilsFun() {
+		
 	ArrayList<Object[]> mydata=new ArrayList<Object[]>();
 	ex=new ExcelReader("D:\\pldata.xlsx");	
 	for (int i = 2; i <= ex.getRowCount("pl"); i++) {
@@ -28,4 +29,31 @@ public class GetdataForPL {
 		}
 	return mydata;
 	}
+	
+	
+	
+	public static ArrayList<Object[]> getTestDataForNewPL() {
+		
+		ArrayList<Object[]> newdata=new ArrayList<Object[]>();
+		ex=new ExcelReader("D:\\pldata.xlsx");
+		for (int i = 2; i <= ex.getRowCount("newpl"); i++) {
+		String name=ex.getCellData("newpl", "name", i);
+		System.out.println(name);
+		String company=ex.getCellData("newpl", "companyname", i);
+		System.out.println(company);
+		String salary=ex.getCellData("newpl", "salary", i);
+		System.out.println(salary);
+		String pincode=ex.getCellData("newpl", "pincode", i);
+		System.out.println(pincode);
+		String pan=ex.getCellData("newpl", "pan", i);
+		System.out.println(pan);
+		String email=ex.getCellData("newpl", "email", i);
+		System.out.println(email);
+		
+		Object[] obj= {name,company,salary,pincode,pan,email};
+		newdata.add(obj);
+		}
+		return newdata;
+	}
+	
 }
